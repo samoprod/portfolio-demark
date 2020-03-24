@@ -53,20 +53,24 @@
 .webui-popover.pop {
   -webkit-transform: scale(0.8);
   -o-transform: scale(0.8);
+  -moz-transform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
   -webkit-transition: transform 0.15s cubic-bezier(0.3, 0, 0, 1.5);
   -o-transition: transform 0.15s cubic-bezier(0.3, 0, 0, 1.5);
   -webkit-transition: -webkit-transform 0.15s cubic-bezier(0.3, 0, 0, 1.5);
   transition: -webkit-transform 0.15s cubic-bezier(0.3, 0, 0, 1.5);
+  -o-transition: -o-transform 0.15s cubic-bezier(0.3, 0, 0, 1.5);
+  -moz-transition: transform 0.15s cubic-bezier(0.3, 0, 0, 1.5), -moz-transform 0.15s cubic-bezier(0.3, 0, 0, 1.5);
   transition: transform 0.15s cubic-bezier(0.3, 0, 0, 1.5);
-  transition: transform 0.15s cubic-bezier(0.3, 0, 0, 1.5), -webkit-transform 0.15s cubic-bezier(0.3, 0, 0, 1.5);
+  transition: transform 0.15s cubic-bezier(0.3, 0, 0, 1.5), -webkit-transform 0.15s cubic-bezier(0.3, 0, 0, 1.5), -moz-transform 0.15s cubic-bezier(0.3, 0, 0, 1.5), -o-transform 0.15s cubic-bezier(0.3, 0, 0, 1.5);
   opacity: 0;
   filter: alpha(opacity=0); }
 
 .webui-popover.pop-out {
   -webkit-transition: .15s linear;
   -o-transition: .15s linear;
+  -moz-transition: .15s linear;
   transition: .15s linear;
   opacity: 0;
   filter: alpha(opacity=0); }
@@ -75,6 +79,7 @@
 .webui-popover.fade-out {
   -webkit-transition: opacity .15s linear;
   -o-transition: opacity .15s linear;
+  -moz-transition: opacity .15s linear;
   transition: opacity .15s linear;
   opacity: 0;
   filter: alpha(opacity=0); }
@@ -86,6 +91,7 @@
 .webui-popover.in {
   -webkit-transform: none;
   -o-transform: none;
+  -moz-transform: none;
   -ms-transform: none;
   transform: none;
   opacity: 1;
@@ -132,6 +138,8 @@
   line-height: 18px;
   background-color: #fff;
   border-bottom: 1px solid #f2f2f2;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0; }
 
 .webui-popover-content {
@@ -304,9 +312,21 @@
   100% {
     -webkit-transform: rotate(360deg); } }
 
+@-moz-keyframes rotate {
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-o-keyframes rotate {
+  100% {
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
 @keyframes rotate {
   100% {
     -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
 .webui-popover-backdrop {
@@ -324,5 +344,6 @@
   top: 0;
   border: none;
   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none;
   float: none; }

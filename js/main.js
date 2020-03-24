@@ -333,7 +333,7 @@ function forms() {
 			}
 			$(this).parents('.options').find('.option').removeClass('active');
 			$(this).toggleClass('active');
-			$(this).children('input').prop('checked', true);
+			$(this).children('input').prop('checked', true).trigger("change");
 		}
 	});
 	//RATING
@@ -669,6 +669,16 @@ if (location.hash) {
 	} else if ($('div.' + hsh).length > 0) {
 		$('body,html').animate({ scrollTop: $('div.' + hsh).offset().top, }, 500, function () { });
 	}
+	if ($(".cart").length) {
+		if (hsh == "seperate") {
+			$(".cart__select option").removeAttr("selected");
+			$(".cart__select option").eq(1).attr("selected", "selected");
+		}
+		if (hsh == "full") {
+			$(".cart__select option").removeAttr("selected");
+			$(".cart__select option").eq(0).attr("selected", "selected");
+		}
+	}
 }
 $('.wrapper').addClass('loaded');
 
@@ -751,6 +761,7 @@ $(".whyus-tabs__navitem").css('opacity', 0);
 $(".header-content__left").css("opacity", 0);
 $(".whyus .portfolio-item").css("opacity", 0);
 $(".homeservices-item").css("opacity", 0);
+$(".services-item").css("opacity", 0);
 
 $('.header').waypoint(function (direction) {
 	$(".header-content__left").addClass('fadeInLeft');
@@ -771,6 +782,12 @@ $('.homeservices').waypoint(function (direction) {
 	$(".homeservices-item").eq(1).addClass('fadeInDown');
 	$(".homeservices-item").eq(2).addClass('fadeInRight');
 	$(".homeservices-full").eq(0).addClass('fadeInUp');
+}, {
+	offset: '50%'
+});
+
+$('.services').waypoint(function (direction) {
+	$(".services-item").addClass('fadeIn visible');
 }, {
 	offset: '50%'
 });
@@ -917,6 +934,9 @@ $('body').on('click', '.tab__navitem', function (event) {
 			$(this).closest('.tabs').find('.slick-slider').slick('setPosition');
 		}
 	}
+	if ($(this).hasClass('all')) {
+		$(this).closest('.tabs').find('.tab__item').addClass('active');
+	}
 });
 $.each($('.spoller.active'), function (index, val) {
 	$(this).next().show();
@@ -937,6 +957,76 @@ $('body').on('click', '.spoller', function (event) {
 		}
 	});
 	return false;
+});
+
+var sum = 0;
+
+// Cart Select
+if ($(".cart__select").val() == 1) {
+	$(".cart-ready").stop().fadeIn();
+	$(".cart-sep").stop().fadeOut();
+} else {
+	$(".cart-ready").stop().fadeOut();
+	$(".cart-sep").stop().fadeIn();
+}
+$(".cart__select").on("change", function () {
+	if ($(this).val() == 1) {
+		$(".cart-ready").stop().fadeIn();
+		$(".cart-sep").stop().fadeOut();
+	} else {
+		$(".cart-ready").stop().fadeOut();
+		$(".cart-sep").stop().fadeIn();
+	}
+	sum = 0;
+	$('.cart-price-wrap__big span').text(numberWithDots(sum));
+});
+
+// Cart
+if ($(".rect-tabs__navitem").parents('.cart-ready').length) {
+	$(".rect-tabs__navitem").not('.cart-ready-clear').click(function () {
+		var arr = $(this).data('attrs').split("|");
+		var eq = 0;
+		var arrSplited = 0;
+		for (var i = 0; i < arr.length; i++) {
+			arrSplited = arr[i].trim().split("-");
+			eq = parseInt(arrSplited[0]) - 1;
+			$(".options").eq(eq).find('.option').removeClass('active');
+			$(".options").eq(eq).find('input').prop("checked", false).trigger("change");
+			$(".options").eq(eq).find("input[value*='" + arrSplited[1] + "']").prop("checked", true).trigger("change").parent().addClass('active');
+		}
+	});
+
+	$(".rect-tabs__navitem.cart-ready-clear").click(function () {
+		$(".options").find('.option').removeClass('active');
+		$(".options").find('input').prop("checked", false).trigger("change");
+	});
+}
+
+
+function numberWithDots(x) {
+	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
+
+$(".cart-price-wrap__btn").click(function () {
+	if ($('.cart-ready').is(":visible")) {
+		$(".options").each(function (i) {
+			if ($(this).find('input:checked').length) {
+				sum += parseInt($(this).find('input:checked').parent().data('price'));
+			}
+		});
+		$('.cart-price-wrap__big span').text(numberWithDots(sum));
+		sum = 0;
+	} else {
+
+		$(".check").each(function (i) {
+			if ($(this).find('input:checked').length) {
+				sum += parseInt($(this).find('input:checked').parent().data('price'));
+			}
+		});
+
+		$('.cart-price-wrap__big span').text(numberWithDots(sum));
+		sum = 0;
+	}
 });
 
 
