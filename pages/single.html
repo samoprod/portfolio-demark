@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Корзина и рассчёт стоимости</title>
+	<title>Страница кейса</title>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -465,446 +465,178 @@
 			<img src="img/homefeedbacks/1.jpg" alt="Background" />
 			<div class="page-header__body">
 				<div class="page-header__wrap">
-					<h1 class="page-header__title"><b>Корзина</b> и рассчёт стоимости</h1>
-					<p class="page-header__description">В данном разделе вы можете <b>рассчитать примерную стоимость</b>
-						Вашего
-						сайта и увидеть уже выбранные Вами услуги. Для Вашего удобства мы реализовали функцию выбора <b>уже
-							готовых решений</b>.
+					<h1 class="page-header__title"><b>LZK</b> - революция грузоперевозок</h1>
+					<p class="page-header__description">Представляем вашему вниманию сайт для презентации работы
+						грузовперевозок - LZK. Мы покажем какие проблемы у нас были и как мы справились с задачами.
 					</p>
 				</div>
-				<div class="page-header__bigtitle"><span>cart</span></div>
+				<div class="page-header__bigtitle"><span>works</span></div>
 			</div>
 		</div>
 
-		<section class="cart">
-			<div class="cart-big"><span>services</span></div>
+		<section class="text-page">
 			<div class="container">
-				<span class="input-label__name">Что вы хотите заказать?</span>
-				<select name="form[]" class="cart__select">
-					<option value="1" selected="selected">Я хочу полноценный сайт с нуля</option>
-					<option value="2">Мне нужны отдельные услуги</option>
-				</select>
-				<div class="cart-ready">
-					<span class="input-label__name">Вы можете выбрать уже готовые решения, или выбрать услуги самому:</span>
-					<div class="tabs rect-tabs">
-					</div>
-					<div class="rect-tabs__nav">
-						<div class="rect-tabs__navitem" data-attrs="1-1|2-2|3-1|4-2|5-3|6-2">
-							<svg class="rect-tabs__icon">
-								<use xlink:href="#corporate"></use>
-							</svg>
-							<span class="rect-tabs__title">Корпоративный сайт</span>
-						</div>
-						<div class="rect-tabs__navitem" data-attrs="1-2|2-1|3-2|4-1|5-1|6-2">
-							<svg class="rect-tabs__icon">
-								<use xlink:href="#visit"></use>
-							</svg>
-							<span class="rect-tabs__title">Одностраничный сайт</span>
-						</div>
-						<div class="rect-tabs__navitem" data-attrs="1-1|2-1|3-2|4-2|5-2|6-2">
-							<svg class="rect-tabs__icon">
-								<use xlink:href="#online-shop"></use>
-							</svg>
-							<span class="rect-tabs__title">Интернет магазин</span>
-						</div>
-						<div class="rect-tabs__navitem" data-attrs="1-2|2-1|3-1|4-2|5-3|6-2">
-							<svg class="rect-tabs__icon">
-								<use xlink:href="#id-card"></use>
-							</svg>
-							<span class="rect-tabs__title">Сайт-визитка</span>
-						</div>
-						<div class="rect-tabs__navitem" data-attrs="1-1|2-2|3-2|4-1|5-2|6-3">
-							<svg class="rect-tabs__icon">
-								<use xlink:href="#logo"></use>
-							</svg>
-							<span class="rect-tabs__title">Фирменный стиль компании</span>
-						</div>
-						<div class="rect-tabs__navitem cart-ready-clear">
-							<svg class="rect-tabs__icon">
-								<use xlink:href="#alltabs"></use>
-							</svg>
-							<span class="rect-tabs__title">Выбрать самому</span>
-						</div>
-					</div>
-					<form action="" class="cart-ready-form">
-						<div class="input-label">
-							<span class="input-label__name">Техническое задание для будущего сайта</span>
-							<div class="options">
-								<div class="option" data-price="10000">
-									<div class="option-info">
-										<h4 class="option-info__title">У меня есть готовое ТЗ</h4>
-										<p class="option-info__descr">У вас уже есть составленное тех. задание? Хорошо, мы обсудим
-											и приступим к делу сразу же.</p>
-									</div>
-									<input type="radio" value="1" name="form[type]" />
-								</div>
-								<div class="option" data-price="5000">
-									<div class="option-info">
-										<h4 class="option-info__title">Составление ТЗ</h4>
-										<p class="option-info__descr">У Вас нет готового ТЗ? Мы поможем составить его совершенно
-											<b>бесплатно</b>.</p>
-									</div>
-									<input type="radio" value="2" name="form[type]" />
-								</div>
-							</div>
-						</div>
-						<div class="input-label">
-							<span class="input-label__name">Фирменный стиль</span>
-							<div class="options">
-								<div class="option" data-price="10000">
-									<div class="option-info">
-										<h4 class="option-info__title">Фирменный стиль готов</h4>
-										<p class="option-info__descr">У Вашей компании уже есть фирменный стиль.</p>
-									</div>
-									<input type="radio" value="1" name="form[type2]" />
-								</div>
-								<div class="option" data-price="5000">
-									<div class="option-info">
-										<h4 class="option-info__title">Создание лого и фирменного стиля</h4>
-										<p class="option-info__descr">У Вашей компании пока нет фирменного стиля? Мы поможем
-											создать его!</p>
-									</div>
-									<input type="radio" value="2" name="form[type2]" />
-								</div>
-							</div>
-						</div>
-						<div class="input-label">
-							<span class="input-label__name">Макеты сайта</span>
-							<div class="options">
-								<div class="option" data-price="10000">
-									<div class="option-info">
-										<h4 class="option-info__title">Создание макетов с нуля</h4>
-										<p class="option-info__descr">Дизайн вашего с сайта с самого нуля. Мы проведём с Вами
-											небольшое интервью и заполним короткий бриф.</p>
-									</div>
-									<input type="radio" value="1" name="form[type3]" />
-								</div>
-								<div class="option" data-price="5000">
-									<div class="option-info">
-										<h4 class="option-info__title">Редизайн готового дизайна</h4>
-										<p class="option-info__descr">Подходит в тех случаях, когда у Вас уже есть дизайн, и Вам
-											нужны макеты на основе старых.</p>
-									</div>
-									<input type="radio" value="2" name="form[type3]" />
-								</div>
-							</div>
-						</div>
-						<div class="input-label">
-							<span class="input-label__name">Графический дизайн(Иконки, арты)</span>
-							<div class="options">
-								<div class="option" data-price="10000">
-									<div class="option-info">
-										<h4 class="option-info__title">Мне нужны уникальные иконки</h4>
-										<p class="option-info__descr">У Вас особенные желания по иконкам? Мы нарисуем совершенно
-											новые иконки для Вашего сайта.</p>
-									</div>
-									<input type="radio" value="1" name="form[type4]" />
-								</div>
-								<div class="option" data-price="5000">
-									<div class="option-info">
-										<h4 class="option-info__title">Использовать готовые иконки</h4>
-										<p class="option-info__descr">Использовать уже готовые наборы иконок для Вашего будущего
-											сайта.</p>
-									</div>
-									<input type="radio" value="2" name="form[type4]" />
-								</div>
-							</div>
-						</div>
-						<div class="input-label">
-							<span class="input-label__name">Вёрстка сайта</span>
-							<div class="options">
-								<div class="option" data-price="10000">
-									<div class="option-info">
-										<h4 class="option-info__title">Современная вёрстка flexbox</h4>
-										<p class="option-info__descr">Настоятельно рекомендуем данный вариант. Современная и
-											уникальная вёрстка для Вашего сайта.</p>
-									</div>
-									<input type="radio" value="1" name="form[type5]" />
-								</div>
-								<div class="option" data-price="5000">
-									<div class="option-info">
-										<h4 class="option-info__title">Блочная вёрстка</h4>
-										<p class="option-info__descr">Устаревший метод вёрстки. Настоятельно рекомендуем
-											использовать первый вариант.</p>
-									</div>
-									<input type="radio" value="2" name="form[type5]" />
-								</div>
-								<div class="option" data-price="5000">
-									<div class="option-info">
-										<h4 class="option-info__title">Использовать сетку Bootstrap</h4>
-										<p class="option-info__descr">Использовать сетку Bootstrap при вёрстке сайта. В
-											большинстве случаев выбирают первый вариант.</p>
-									</div>
-									<input type="radio" value="3" name="form[type5]" />
-								</div>
-							</div>
-						</div>
-						<div class="input-label">
-							<span class="input-label__name">Выберите систему управления контентом</span>
-							<div class="options">
-								<div class="option" data-price="7000">
-									<div class="option-info">
-										<h4 class="option-info__title">Посадка на CMS Wordpress</h4>
-										<p class="option-info__descr">Интеграция вёрстки с CMS Wordpress. Подходит для любой
-											задачи.</p>
-									</div>
-									<input type="radio" value="1" name="form[type6]" />
-								</div>
-								<div class="option" data-price="5500">
-									<div class="option-info">
-										<h4 class="option-info__title">Посадка на 1C-Bitrix</h4>
-										<p class="option-info__descr">Интеграция вёрстки с очень мощным CMS 1C-Bitrix подходит для
-											больших интернет-магазинов и Highload проектов.</p>
-									</div>
-									<input type="radio" value="2" name="form[type6]" />
-								</div>
-								<div class="option" data-price="3500">
-									<div class="option-info">
-										<h4 class="option-info__title">Нам нужна особенная система</h4>
-										<p class="option-info__descr">В большинстве случаев подходят CMS. Но иногда нужны системы
-											написанные с нуля. Тогда этот вариант для Вас.</p>
-									</div>
-									<input type="radio" value="3" name="form[type6]" />
-								</div>
-							</div>
-						</div>
-					</form>
-					<div class="cart-price-wrap">
-						<div class="cart-price-wrap__body">
-							<button class="btn cart-price-wrap__btn">
-								<svg>
-									<use xlink:href="#money"></use>
-								</svg>
-								Рассчитать стоимость
-							</button>
-							<div class="cart-price-wrap__price">
-								<span class="cart-price-wrap__big"><span>0</span> ₽</span>
-								<span class="cart-price-wrap__note">Примерная стоимость вашего заказа</span>
-							</div>
-						</div>
-						<div class="cart-price-wrap__text">
-							Все цены, которые вы здесь увидите - не являются конечными. Конечную цену мы огласим после того,
-							как обработаем ваш запрос и свяжемся с Вами.
-						</div>
-					</div>
+				<div class="text-page-body">
+					<h4 style="color: #5a84c5">Задача клиента:</h4>
+					<p>Разработать сайт-одностраничник, который поможет привлечь новых клиентов на сайт и повысить
+						узнаваемость данной компании. Вот как мы справились с задачей.</p>
+					<br><br>
+
+					<h4 style="color: #303030">Мы начинали с составления технического задания:</h4>
+					<p>Клиент приходил к нам без ТЗ. У него были просто какие-то желания и представления о будущем сайте, и
+						мы конечно же вместе с ним составили точное техническое задание для будущего сайта. Наш дизайнер
+						провёл
+						подробное интервью с нашим клиентом и в конце мы получили уже какое-то представление о том, что должно
+						получатся.</p>
+					<a href="img/single/1.jpg" target="_blank"><img src="img/single/1.jpg" alt="" /></a>
+					<br><br>
+					<h4 style="color: #303030">Дальше дизайн макетов:</h4>
+					<p>У нас уже есть подробное ТЗ. Мы знаем какой фирменный стиль у компании. Остаётся только нарисовать
+						макеты страниц. Наши дизайнеры приступили к делу. В первом этапе мы получили такой вариант первого
+						экрана.</p>
+					<a href="img/single/2.jpg" target="_blank"><img src="img/single/2.jpg" alt="" /></a>
+					<p>
+						После того, как наш клиент одобрил первый экран, дизайнеру приступили к остальным секциям сайта. После
+						двух дней работы и общения с нашим клиентом мы получили конечный вариант дизайна. Осталась вёрстка
+						сайта, посадка на CMS и продвижение.
+					</p>
+					<br><br>
+					<h4 style="color: #303030">Вёрстка сайта:</h4>
+					<p>Мы начали разработку данного сайта. Было принято решение сделать блочную вёрстку, поскольку
+						требовалось поддержка старых бразуеров, в том числе и IE8. Был использован сетка Bootstrap в целях
+						упрощения работы в будущем. Планировалось изменение блоков раз в месяц и чтобы было легче и быстрее
+						разработчикам вносить изменения - лучше сетки Bootstrap не справилась бы никакая другая сетка.</p>
+					<a href="img/single/3.jpg" target="_blank"><img src="img/single/3.jpg" alt="" /></a>
+					<br><br>
+					<h4 style="color: #303030">Посадка на CMS(интеграция с системой управления контентом):</h4>
+					<p>При составлении технического задания мы договорились на использование системы управения контентом(CMS)
+						Wordpress. Это мощный инструмент, который подходит в большинстве случаев. И плюс ко всему этому он
+						бесплатный и ещё для него созданы десятки тысяч платных и бесплатных плагинов, которые расширают
+						функциональность данного инструмента. Задачей была контроль над всем сайтом из админ-панели.
+						Мы реализовали такой функционал, сделали удобный интерфейс управления сайтом и перешли к следующему
+						этапу - продвижение сайта.</p>
+					<a href="img/single/4.jpg" target="_blank"><img src="img/single/4.jpg" alt="" /></a>
+					<br><br>
+					<h4 style="color: #303030">Публикация сайта:</h4>
+					<p>Мы выбрали хостинг, купили домейн и опубликовали проект в интернете. Дальше дело за маркетологом. Вот
+						как мы справились с продвижением.</p>
+					<br><br>
+					<h4 style="color: #303030">Продвижение сайта:</h4>
+					<p>Наш маркетолог приступил к делу. Всё началось с того, что мы нашли самые распространённые ключевые
+						слова по данной тематике и продвигали наш сайт именно по ним. Мы создали таблицу ключевых слов и
+						прочего, чтобы получить только те ключевые слова и аудиторию, которая будет самой эффективной для
+						данного сайта . У нас это вышло. Мы без рекламы через неделю вышли на вторую позицию в поисковике
+						Google по запросу “Организация грузоперевозок в России”.</p>
+					<a href="img/single/5.jpg" target="_blank"><img src="img/single/5.jpg" alt="" /></a>
+					<br><br>
+					<h4 style="color: #5a84c5">Задача решена:</h4>
+					<p>Мы решили задачу, которую нам дал наш клиент. Вы увидели весь процесс работы над этим сайтом.
+						Понравились наши методы? Закажите сайт, решим и Вашу задачу!</p>
 				</div>
-				<div class="cart-sep">
-					<span class="input-label__name">Выберите нужные услуги и оформите заявку:</span>
-					<form action="" class="cart-sep-form">
-						<div class="check" data-price="5500">
-							<div class="option-info">
-								<h4 class="option-info__title">Составление тех. задания</h4>
-								<p class="option-info__descr">Если у Вас нет готового технического задания, мы поможем
-									составить его.</p>
-							</div>
-							<input type="checkbox" value="1" name="form[]" />
-						</div>
-						<div class="check" data-price="5500">
-							<div class="option-info">
-								<h4 class="option-info__title">Графический дизайн</h4>
-								<p class="option-info__descr">Если Вам нужны уникальные иконки, наши дизайнеры нарисуют
-									совершенно новые иконки только для Вашего проекта.</p>
-							</div>
-							<input type="checkbox" value="1" name="form[]" />
-						</div>
-						<div class="check" data-price="10000">
-							<div class="option-info">
-								<h4 class="option-info__title">Создание логотипа</h4>
-								<p class="option-info__descr">Вам нужен новый логотип? Не проблема. Мы нарисуем логотип для
-									Вашей компании.</p>
-							</div>
-							<input type="checkbox" value="1" name="form[]" />
-						</div>
-						<div class="check" data-price="8000">
-							<div class="option-info">
-								<h4 class="option-info__title">Дизайн сайта</h4>
-								<p class="option-info__descr">У вас пока нет макетов для Вашего сайта? Доверьте нам создание
-									дизайна Вашего будущего сайта.</p>
-							</div>
-							<input type="checkbox" value="1" name="form[]" />
-						</div>
-						<div class="check" data-price="5600">
-							<div class="option-info">
-								<h4 class="option-info__title">Составление тех. задания</h4>
-								<p class="option-info__descr">Если у Вас нет готового технического задания, мы поможем
-									составить его.</p>
-							</div>
-							<input type="checkbox" value="1" name="form[]" />
-						</div>
-						<div class="check" data-price="7550">
-							<div class="option-info">
-								<h4 class="option-info__title">Графический дизайн</h4>
-								<p class="option-info__descr">Если Вам нужны уникальные иконки, наши дизайнеры нарисуют
-									совершенно новые иконки только для Вашего проекта.</p>
-							</div>
-							<input type="checkbox" value="1" name="form[]" />
-						</div>
-						<div class="check" data-price="5500">
-							<div class="option-info">
-								<h4 class="option-info__title">Создание логотипа</h4>
-								<p class="option-info__descr">Вам нужен новый логотип? Не проблема. Мы нарисуем логотип для
-									Вашей компании.</p>
-							</div>
-							<input type="checkbox" value="1" name="form[]" />
-						</div>
-						<div class="check" data-price="5000">
-							<div class="option-info">
-								<h4 class="option-info__title">Дизайн сайта</h4>
-								<p class="option-info__descr">У вас пока нет макетов для Вашего сайта? Доверьте нам создание
-									дизайна Вашего будущего сайта.</p>
-							</div>
-							<input type="checkbox" value="1" name="form[]" />
-						</div>
-						<div class="check" data-price="5000">
-							<div class="option-info">
-								<h4 class="option-info__title">Составление тех. задания</h4>
-								<p class="option-info__descr">Если у Вас нет готового технического задания, мы поможем
-									составить его.</p>
-							</div>
-							<input type="checkbox" value="1" name="form[]" />
-						</div>
-						<div class="check" data-price="8000">
-							<div class="option-info">
-								<h4 class="option-info__title">Графический дизайн</h4>
-								<p class="option-info__descr">Если Вам нужны уникальные иконки, наши дизайнеры нарисуют
-									совершенно новые иконки только для Вашего проекта.</p>
-							</div>
-							<input type="checkbox" value="1" name="form[]" />
-						</div>
-						<div class="check" data-price="5500">
-							<div class="option-info">
-								<h4 class="option-info__title">Создание логотипа</h4>
-								<p class="option-info__descr">Вам нужен новый логотип? Не проблема. Мы нарисуем логотип для
-									Вашей компании.</p>
-							</div>
-							<input type="checkbox" value="1" name="form[]" />
-						</div>
-						<div class="check" data-price="3500">
-							<div class="option-info">
-								<h4 class="option-info__title">Дизайн сайта</h4>
-								<p class="option-info__descr">У вас пока нет макетов для Вашего сайта? Доверьте нам создание
-									дизайна Вашего будущего сайта.</p>
-							</div>
-							<input type="checkbox" value="1" name="form[]" />
-						</div>
-						<div class="check" data-price="12500">
-							<div class="option-info">
-								<h4 class="option-info__title">Составление тех. задания</h4>
-								<p class="option-info__descr">Если у Вас нет готового технического задания, мы поможем
-									составить его.</p>
-							</div>
-							<input type="checkbox" value="1" name="form[]" />
-						</div>
-						<div class="check" data-price="5500">
-							<div class="option-info">
-								<h4 class="option-info__title">Графический дизайн</h4>
-								<p class="option-info__descr">Если Вам нужны уникальные иконки, наши дизайнеры нарисуют
-									совершенно новые иконки только для Вашего проекта.</p>
-							</div>
-							<input type="checkbox" value="1" name="form[]" />
-						</div>
-						<div class="check" data-price="15500">
-							<div class="option-info">
-								<h4 class="option-info__title">Создание логотипа</h4>
-								<p class="option-info__descr">Вам нужен новый логотип? Не проблема. Мы нарисуем логотип для
-									Вашей компании.</p>
-							</div>
-							<input type="checkbox" value="1" name="form[]" />
-						</div>
-						<div class="check" data-price="7500">
-							<div class="option-info">
-								<h4 class="option-info__title">Дизайн сайта</h4>
-								<p class="option-info__descr">У вас пока нет макетов для Вашего сайта? Доверьте нам создание
-									дизайна Вашего будущего сайта.</p>
-							</div>
-							<input type="checkbox" value="1" name="form[]" />
-						</div>
-					</form>
-					<div class="cart-price-wrap">
-						<div class="cart-price-wrap__body">
-							<button class="btn cart-price-wrap__btn">
-								<svg>
-									<use xlink:href="#money"></use>
-								</svg>
-								Рассчитать стоимость
-							</button>
-							<div class="cart-price-wrap__price">
-								<span class="cart-price-wrap__big"><span>0</span> ₽</span>
-								<span class="cart-price-wrap__note">Примерная стоимость вашего заказа</span>
-							</div>
-						</div>
-						<div class="cart-price-wrap__text">
-							Все цены, которые вы здесь увидите - не являются конечными. Конечную цену мы огласим после того,
-							как обработаем ваш запрос и свяжемся с Вами.
-						</div>
-					</div>
+				<div class="single-feedback">
+					<h3 class="single-feedback__title">Отзыв от Иван Иванов</h3>
+					<div class="single-feedback__rank">Директор компании ‘ПримерКомпании’</div>
+					<p class="single-feedback__txt">Здравствуйте! Давно работаю со студией DeMark. Ребята знают своё дело.
+						Всегда оперативно откликаются на новые заявки и правки. Всегда всё вовремя и конечно же качественно.
+						Мы не простая компания и наши задачи иногда бывают очень сложные в реализации. Несмотря на это,
+						сотрудники DeMark всегда быстро решают такие задачи и не дают ждать. Благодаря правильной тактике
+						работы с клиентами, мы всегда видим на каком этапе находится наш проект и при необходимости вносим
+						правки во время его реализации. Спасибо студии DeMark.
+					</p>
 				</div>
 			</div>
 		</section>
 
+		<!-- ! Здесь загаловок можно изменить на "Хотите такой же сайт? <b>Напишите нам!</b>" -->
 		<!-- ! Meetings -->
-		<section class="meetings">
-			<div class="container">
-				<div class="meetings-body">
-					<form action="" class="meetings-form">
-						<h3 class="meetings-form__title">Оформить заявку с выбранными услугами</h3>
-						<div class="inputs-group">
-							<div class="inputs-group__column">
-								<label class="input-label">
-									<span class="input-label__name">Ваше имя<span class="r">*</span></span>
-									<input autocomplete="off" type="text" name="form[]" data-value="Введите ваше имя"
-										class="input req input-label__input" />
-								</label>
-								<label class="input-label">
-									<span class="input-label__name">Ваша фамилия<span class="r">*</span></span>
-									<input autocomplete="off" type="text" name="form[]" data-value="Введите вашу фамилию"
-										class="input req input-label__input" />
-								</label>
-								<label class="input-label captcha">
-									<span class="input-label__name">Напишите ответ на:
-										<span class="first-num">8</span> + <span class="second-num">5</span>
-										<span class="r">*</span>
-									</span>
-									<input autocomplete="off" type="text" name="form[]" data-value="Введите решение задачи"
-										class="input req input-label__input" />
-								</label>
-							</div>
-							<div class="inputs-group__column">
-								<label class="input-label">
-									<span class="input-label__name">Ваша почта<span class="r">*</span></span>
-									<input autocomplete="off" type="text" name="form[]" data-value="Введите ваш E-Mail"
-										class="input req email input-label__input" />
-								</label>
-								<label class="input-label">
-									<span class="input-label__name">Ваш номер телефона<span class="r">*</span></span>
-									<input autocomplete="off" type="text" name="form[]" data-value="Введите ваш номер телефона"
-										class="input req phone input-label__input" />
-								</label>
-								<label class="input-label">
-									<span class="input-label__name">Дополнительные пожелания:</span>
-									<input autocomplete="off" type="text" name="form[]"
-										data-value="Напишите здесь примечания к заявке, которые вы хотите оставить."
-										class="input input-label__input" />
-								</label>
-							</div>
-							<div class="inputs-group__row">
-								<p class="form-accept">Нажатием кнопки «Свяжитесь со мной» я принимаю <a href="#">условия
-										оферты</a> по
-									использованию сайта и согласен с <a href="#">Политикой конфиденциальности</a>.</p>
-							</div>
-							<div class="inputs-group__row">
-								<button type="submit" class="btn btn--red">
-									<svg>
-										<use xlink:href="#phone"></use>
-									</svg>
-									Свяжитесь со мной
-								</button>
-							</div>
-						</div>
-					</form>
-				</div>
+<section class="meetings">
+	<div class="container">
+		<div class="section-info">
+			<h2 class="section-info__title">Договоримся о <b>встрече</b>? Или мы можем <b>связаться с вами</b>!</h2>
+			<p class="section-info__description">Насколько бы красиво мы не показали бы мастерство в нашем деле, Вам
+				всё же стоит посмотреть на отзывы тех людей, которые уже работали с нами и <b>
+					сделали свой бизнес намного
+					успешней
+				</b>.</p>
+		</div>
+
+		<div class="meetings-body">
+			<div class="meetings-columns-left">
+				<img src="img/calendly.png" alt="" />
 			</div>
-		</section>
+			<div class="meetings-columns-right">
+				<form action="" class="meetings-form" data-ms="success">
+					<h3 class="meetings-form__title">Форма обратной связи</h3>
+					<div class="inputs-group">
+						<div class="inputs-group__column">
+							<label class="input-label">
+								<span class="input-label__name">Ваше имя<span class="r">*</span></span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите ваше имя"
+									class="input req input-label__input" />
+							</label>
+
+							<label class="input-label">
+								<span class="input-label__name">Ваша фамилия<span class="r">*</span></span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите вашу фамилию"
+									class="input req input-label__input" />
+							</label>
+
+							<span class="input-label__name">Скажите нам, что вам нужно<span class="r">*</span></span>
+							<select name="form[]" class="select-normal">
+								<option value="1" selected="selected">Я пока не определился(ась)</option>
+								<option value="2">Дизайн сайта</option>
+								<option value="3">Разработка сайта</option>
+								<option value="4">Сайт под ключ</option>
+							</select>
+
+						</div>
+						<div class="inputs-group__column">
+
+							<label class="input-label">
+								<span class="input-label__name">Ваша почта<span class="r">*</span></span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите ваш E-Mail"
+									class="input req email input-label__input" />
+							</label>
+
+							<label class="input-label">
+								<span class="input-label__name">Ваш номер телефона<span class="r">*</span></span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите ваш номер телефона"
+									class="input req phone input-label__input" />
+							</label>
+
+							<label class="input-label captcha">
+								<span class="input-label__name">Напишите ответ на:
+									<span class="first-num">8</span> + <span class="second-num">5</span>
+									<span class="r">*</span>
+								</span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите решение задачи"
+									class="input req input-label__input" />
+							</label>
+						</div>
+						<div class="inputs-group__row">
+							<label class="input-label captcha">
+								<span class="input-label__name">Дополнительные пожелания:</span>
+								<textarea name="form[]" data-value="Введите решение задачи"
+									class="input input-label__text"></textarea>
+							</label>
+						</div>
+						<div class="inputs-group__row">
+							<p class="form-accept">Нажатием кнопки «Свяжитесь со мной» я принимаю <a href="#">условия
+									оферты</a> по
+								использованию сайта и согласен с <a href="#">Политикой конфиденциальности</a>.</p>
+							<button type="submit" class="btn btn--red">
+								<svg>
+									<use xlink:href="#phone"></use>
+								</svg>
+								Свяжитесь со мной
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
 
 		<footer class="footer">
 	<div class='container'>

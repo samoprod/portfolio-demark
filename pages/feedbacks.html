@@ -479,7 +479,7 @@
 		<!-- !Feedbacks -->
 		<section class="feedbacks">
 			<div class="container">
-				<a href="#callback" class="btn btn--red pl">
+				<a href="#feedbacks" class="btn btn--red pl">
 					<svg>
 						<use xlink:href="#feedbacks"></use>
 					</svg>
@@ -595,7 +595,7 @@
 						</div>
 					</div>
 				</div>
-				<a href="#callback" class="btn btn--red pl">
+				<a href="#feedbacks" class="btn btn--red pl">
 					<svg>
 						<use xlink:href="#feedbacks"></use>
 					</svg>
@@ -607,93 +607,94 @@
 
 
 		<!-- ! Meetings -->
-		<section class="meetings">
-			<div class="container">
-				<div class="section-info">
-					<h2 class="section-info__title">Договоримся о <b>встрече</b>? Или мы можем <b>связаться с вами</b>!</h2>
-					<p class="section-info__description">Насколько бы красиво мы не показали бы мастерство в нашем деле, Вам
-						всё же стоит посмотреть на отзывы тех людей, которые уже работали с нами и <b>
-							сделали свой бизнес намного
-							успешней
-						</b>.</p>
-				</div>
+<section class="meetings">
+	<div class="container">
+		<div class="section-info">
+			<h2 class="section-info__title">Договоримся о <b>встрече</b>? Или мы можем <b>связаться с вами</b>!</h2>
+			<p class="section-info__description">Насколько бы красиво мы не показали бы мастерство в нашем деле, Вам
+				всё же стоит посмотреть на отзывы тех людей, которые уже работали с нами и <b>
+					сделали свой бизнес намного
+					успешней
+				</b>.</p>
+		</div>
 
-				<div class="meetings-body">
-					<div class="meetings-columns-left">
-						<img src="img/calendly.png" alt="" />
-					</div>
-					<div class="meetings-columns-right">
-						<form action="" class="meetings-form">
-							<h3 class="meetings-form__title">Форма обратной связи</h3>
-							<div class="inputs-group">
-								<div class="inputs-group__column">
-									<label class="input-label">
-										<span class="input-label__name">Ваше имя<span class="r">*</span></span>
-										<input tabindex="30" autocomplete="off" type="text" name="form[]"
-											data-value="Введите ваше имя" class="input req input-label__input" />
-									</label>
-
-									<label class="input-label">
-										<span class="input-label__name">Ваша почта<span class="r">*</span></span>
-										<input tabindex="33" autocomplete="off" type="text" name="form[]"
-											data-value="Введите ваш E-Mail" class="input req email input-label__input" />
-									</label>
-
-									<span class="input-label__name">Скажите нам, что вам нужно<span class="r">*</span></span>
-									<select name="form[]" class="select-normal">
-										<option value="1" selected="selected">Я пока не определился(ась)</option>
-										<option value="2">Дизайн сайта</option>
-										<option value="3">Разработка сайта</option>
-										<option value="4">Сайт под ключ</option>
-									</select>
-
-								</div>
-								<div class="inputs-group__column">
-									<label class="input-label">
-										<span class="input-label__name">Ваша фамилия<span class="r">*</span></span>
-										<input tabindex="32" autocomplete="off" type="text" name="form[]"
-											data-value="Введите вашу фамилию" class="input req input-label__input" />
-									</label>
-
-									<label class="input-label">
-										<span class="input-label__name">Ваш номер телефона<span class="r">*</span></span>
-										<input tabindex="34" autocomplete="off" type="text" name="form[]"
-											data-value="Введите ваш номер телефона" class="input req phone input-label__input" />
-									</label>
-
-									<label class="input-label captcha">
-										<span class="input-label__name">Напишите ответ на:
-											<span class="first-num">8</span> + <span class="second-num">5</span>
-											<span class="r">*</span>
-										</span>
-										<input tabindex="36" autocomplete="off" type="text" name="form[]"
-											data-value="Введите решение задачи" class="input req input-label__input" />
-									</label>
-								</div>
-								<div class="inputs-group__row">
-									<label class="input-label captcha">
-										<span class="input-label__name">Дополнительные пожелания:</span>
-										<textarea tabindex="37" name="form[]" data-value="Введите решение задачи"
-											class="input input-label__text"></textarea>
-									</label>
-								</div>
-								<div class="inputs-group__row">
-									<p class="form-accept">Нажатием кнопки «Свяжитесь со мной» я принимаю <a href="#">условия
-											оферты</a> по
-										использованию сайта и согласен с <a href="#">Политикой конфиденциальности</a>.</p>
-									<button type="submit" class="btn btn--red">
-										<svg>
-											<use xlink:href="#phone"></use>
-										</svg>
-										Свяжитесь со мной
-									</button>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
+		<div class="meetings-body">
+			<div class="meetings-columns-left">
+				<img src="img/calendly.png" alt="" />
 			</div>
-		</section>
+			<div class="meetings-columns-right">
+				<form action="" class="meetings-form" data-ms="success">
+					<h3 class="meetings-form__title">Форма обратной связи</h3>
+					<div class="inputs-group">
+						<div class="inputs-group__column">
+							<label class="input-label">
+								<span class="input-label__name">Ваше имя<span class="r">*</span></span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите ваше имя"
+									class="input req input-label__input" />
+							</label>
+
+							<label class="input-label">
+								<span class="input-label__name">Ваша фамилия<span class="r">*</span></span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите вашу фамилию"
+									class="input req input-label__input" />
+							</label>
+
+							<span class="input-label__name">Скажите нам, что вам нужно<span class="r">*</span></span>
+							<select name="form[]" class="select-normal">
+								<option value="1" selected="selected">Я пока не определился(ась)</option>
+								<option value="2">Дизайн сайта</option>
+								<option value="3">Разработка сайта</option>
+								<option value="4">Сайт под ключ</option>
+							</select>
+
+						</div>
+						<div class="inputs-group__column">
+
+							<label class="input-label">
+								<span class="input-label__name">Ваша почта<span class="r">*</span></span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите ваш E-Mail"
+									class="input req email input-label__input" />
+							</label>
+
+							<label class="input-label">
+								<span class="input-label__name">Ваш номер телефона<span class="r">*</span></span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите ваш номер телефона"
+									class="input req phone input-label__input" />
+							</label>
+
+							<label class="input-label captcha">
+								<span class="input-label__name">Напишите ответ на:
+									<span class="first-num">8</span> + <span class="second-num">5</span>
+									<span class="r">*</span>
+								</span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите решение задачи"
+									class="input req input-label__input" />
+							</label>
+						</div>
+						<div class="inputs-group__row">
+							<label class="input-label captcha">
+								<span class="input-label__name">Дополнительные пожелания:</span>
+								<textarea name="form[]" data-value="Введите решение задачи"
+									class="input input-label__text"></textarea>
+							</label>
+						</div>
+						<div class="inputs-group__row">
+							<p class="form-accept">Нажатием кнопки «Свяжитесь со мной» я принимаю <a href="#">условия
+									оферты</a> по
+								использованию сайта и согласен с <a href="#">Политикой конфиденциальности</a>.</p>
+							<button type="submit" class="btn btn--red">
+								<svg>
+									<use xlink:href="#phone"></use>
+								</svg>
+								Свяжитесь со мной
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
 
 		<footer class="footer">
 	<div class='container'>
@@ -801,31 +802,173 @@
 		<div class="cell">
 			<div class="popup-content">
 				<div class="popup-close"></div>
-				<div class="popup__title"></div>
-				<div class="popup__txt"></div>
-				<form action="#" class="popup-form form">
-					<div class="form-input">
-						<input autocomplete="off" type="text" name="form[]" data-value="" class="input" />
-					</div>
-					<div class="form-input">
-						<input autocomplete="off" type="text" name="form[]" data-value="" class="input req email" />
-					</div>
-					<div class="form-input">
-						<input autocomplete="off" type="text" name="form[]" data-value="" class="input req" />
-					</div>
-					<div class="form-button">
-						<button type="submit" class="form__btn btn fw"></button>
+				<div class="popup__title">Заказать сайт онлайн</div>
+				<div class="popup__txt">Наши консультанты максимально оперативно ответят на Вашу заявку. Мы свяжемся с Вами
+					и обсудим все детали связанные с Вашим сайтом.</div>
+				<form action="#" class="popup-form form" data-ms="success">
+					<div class="inputs-group">
+						<div class="inputs-group__column">
+							<label class="input-label">
+								<span class="input-label__name">Ваше имя<span class="r">*</span></span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите ваше имя"
+									class="input req input-label__input" />
+							</label>
+
+							<label class="input-label">
+								<span class="input-label__name">Ваша почта<span class="r">*</span></span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите ваш E-Mail"
+									class="input req email input-label__input" />
+							</label>
+
+							<span class="input-label__name">Скажите нам, что вам нужно<span class="r">*</span></span>
+							<select name="form[]" class="select-normal">
+								<option value="1">Дизайн сайта</option>
+								<option value="2">Разработка сайта</option>
+								<option value="3">Продвижение сайта</option>
+								<option value="4" selected="selected">Сайт под ключ</option>
+							</select>
+
+						</div>
+						<div class="inputs-group__column">
+							<label class="input-label">
+								<span class="input-label__name">Ваша фамилия<span class="r">*</span></span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите вашу фамилию"
+									class="input req input-label__input" />
+							</label>
+
+							<label class="input-label">
+								<span class="input-label__name">Ваш номер телефона<span class="r">*</span></span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите ваш номер телефона"
+									class="input req phone input-label__input" />
+							</label>
+
+							<label class="input-label captcha">
+								<span class="input-label__name">Напишите ответ на:
+									<span class="first-num">8</span> + <span class="second-num">5</span>
+									<span class="r">*</span>
+								</span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите решение задачи"
+									class="input req input-label__input" />
+							</label>
+						</div>
+						<div class="inputs-group__row">
+							<label class="input-label captcha">
+								<span class="input-label__name">Дополнительные пожелания:</span>
+								<textarea name="form[]" data-value="Ваши пожелания перед тем, как мы свяжемся с вами. "
+									class="input input-label__text"></textarea>
+							</label>
+						</div>
+						<div class="inputs-group__row">
+							<p class="form-accept">Нажатием кнопки «Свяжитесь со мной» я принимаю <a href="#">условия
+									оферты</a> по
+								использованию сайта и согласен с <a href="#">Политикой конфиденциальности</a>.</p>
+							<button type="submit" class="btn btn--red">
+								<svg>
+									<use xlink:href="#phone"></use>
+								</svg>
+								Оставить заявку
+							</button>
+						</div>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="popup popup-video">
+
+
+<div class="popup popup-feedbacks">
 	<div class="popup-table table">
 		<div class="cell">
-			<div class="popup-close"></div>
-			<div class="popup-video__value"></div>
+			<div class="popup-content">
+				<div class="popup-close"></div>
+				<div class="popup__title">Оставить отзыв о наших услугах</div>
+				<div class="popup__txt">Если вы уже работали с нами, просим вас оставить отзыв по форме ниже и она в скором
+					времени появится на сайте.</div>
+				<form action="#" class="popup-form form" data-ms="success">
+					<div class="inputs-group">
+						<div class="inputs-group__column">
+							<label class="input-label">
+								<span class="input-label__name">Ваше имя<span class="r">*</span></span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите ваше имя"
+									class="input req input-label__input" />
+							</label>
+
+							<label class="input-label">
+								<span class="input-label__name">Ваша фамилия<span class="r">*</span></span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите вашу фамилию"
+									class="input req input-label__input" />
+							</label>
+
+
+							<span class="input-label__name">Оцените нашу работу<span class="r">*</span></span>
+							<select name="form[]" class="select-normal">
+								<option value="1" selected="selected">Отличная работа</option>
+								<option value="2">Хорошая работа</option>
+								<option value="3">Неплохая работа</option>
+								<option value="4">Плохая работа</option>
+							</select>
+
+						</div>
+						<div class="inputs-group__column">
+
+							<label class="input-label">
+								<span class="input-label__name">Ваша почта<span class="r">*</span></span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите ваш E-Mail"
+									class="input req email input-label__input" />
+							</label>
+
+							<label class="input-label">
+								<span class="input-label__name">Ваш номер телефона<span class="r">*</span></span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите ваш номер телефона"
+									class="input req phone input-label__input" />
+							</label>
+
+							<label class="input-label captcha">
+								<span class="input-label__name">Напишите ответ на:
+									<span class="first-num">8</span> + <span class="second-num">5</span>
+									<span class="r">*</span>
+								</span>
+								<input autocomplete="off" type="text" name="form[]" data-value="Введите решение задачи"
+									class="input req input-label__input" />
+							</label>
+						</div>
+						<div class="inputs-group__row">
+							<label class="input-label">
+								<span class="input-label__name">Ваш отзыв<span class="r">*</span></span>
+								<textarea name="form[]" data-value="Ваши пожелания перед тем, как мы свяжемся с вами. "
+									class="input req input-label__text"></textarea>
+							</label>
+						</div>
+						<div class="inputs-group__row">
+							<p class="form-accept">Нажатием кнопки «Оставить отзыв» я принимаю <a href="#">условия
+									оферты</a> по
+								использованию сайта и согласен с <a href="#">Политикой конфиденциальности</a>.</p>
+							<button type="submit" class="btn btn--red">
+								<svg>
+									<use xlink:href="#feedbacks"></use>
+								</svg>
+								Оставить отзыв
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="popup popup-success">
+	<div class="popup-table table">
+		<div class="cell">
+			<div class="popup-content">
+				<div class="popup-close"></div>
+				<div class="popup__title"><span class="b"><b>Спасибо</b></span> за заявку!</div>
+				<div class="popup__txt">Наши консультанты максимально оперативно ответят на Вашу заявку. Мы свяжемся с Вами
+					и обсудим все детали связанные с Вашим сайтом.</div>
+			</div>
 		</div>
 	</div>
 </div>
